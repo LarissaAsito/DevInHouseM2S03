@@ -4,6 +4,7 @@ public class Cliente {
     private Double peso;
     private Double altura;
     private int idade;
+    private String codigoCliente;
 
     public Double getPeso() {
         return peso;
@@ -27,5 +28,13 @@ public class Cliente {
 
     public void setIdade(int idade) {
         this.idade = idade;
+    }
+
+    public String getCodigoCliente() {
+        return codigoCliente;
+    }
+
+    public void setCodigoCliente(String codigoCliente) {
+        this.codigoCliente = codigoCliente;
     }
 }
