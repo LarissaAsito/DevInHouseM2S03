@@ -30,4 +30,51 @@ public class Clinica {
         return resultado;
     }
 
+    public String getNomeDono() {
+        return nomeDono;
+    }
+
+    public void setNomeDono(String nomeDono) {
+        this.nomeDono = nomeDono;
+    }
+
+    public String getNomeClinica() {
+        return nomeClinica;
+    }
+
+    public void setNomeClinica(String nomeClinica) {
+        this.nomeClinica = nomeClinica;
+    }
+
+    public String getCnpj() {
+        return cnpj;
+    }
+
+    public void setCnpj(String cnpj) {
+        this.cnpj = cnpj;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
+
+    public String getCodigoClinica() {
+        return codigoClinica;
+    }
+
+    public void setCodigoClinica(String codigoClinica) {
+        this.codigoClinica = codigoClinica;
+    }
+
+    public List<Cliente> getClientes() {
+        return clientes;
+    }
+
+    public void setClientes(List<Cliente> clientes) {
+        this.clientes = clientes;
+    }
 }
