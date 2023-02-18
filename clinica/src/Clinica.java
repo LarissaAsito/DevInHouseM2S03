@@ -91,11 +91,17 @@ public class Clinica {
         clientes.get(id).setPeso(clientes.get(id).getPeso()-pesoReduzir);
         System.out.println("Novo peso: "+clientes.get(id).getPeso());
     }
+    public void listarClientes(){
+        this.clientes.forEach(System.out::println);
+    }
 
     @Override
     public String toString() {
         return "Clinica{" +
-                "nomeClinica='" + nomeClinica + '\'' +
+                "nomeDono='" + nomeDono + '\'' +
+                ", nomeClinica='" + nomeClinica + '\'' +
+                ", cnpj='" + cnpj + '\'' +
+                ", endereco='" + endereco + '\'' +
                 ", clientes=" + clientes +
                 '}';
     }

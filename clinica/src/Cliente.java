@@ -49,5 +49,12 @@ public class Cliente {
         this.codigoCliente = codigoCliente;
     }
 
-
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "peso=" + peso +
+                ", altura=" + altura +
+                ", idade=" + idade +
+                '}';
+    }
 }
