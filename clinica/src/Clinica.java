@@ -1,4 +1,3 @@
-package model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -79,11 +78,25 @@ public class Clinica {
         this.codigoClinica = codigoClinica;
     }
 
-    public List<Cliente> getClientes() {
-        return clientes;
+    public void adicionarCliente(Cliente cliente){
+        clientes.add(cliente);
     }
 
-    public void setClientes(List<Cliente> clientes) {
-        this.clientes = clientes;
+    public void tratamento(int id){
+        clientes.get(id).setPeso(clientes.get(id).getPeso()+5.0);
+        System.out.println("Novo peso: "+clientes.get(id).getPeso());
+    }
+
+    public void tratamento(int id, Double pesoReduzir){
+        clientes.get(id).setPeso(clientes.get(id).getPeso()-pesoReduzir);
+        System.out.println("Novo peso: "+clientes.get(id).getPeso());
+    }
+
+    @Override
+    public String toString() {
+        return "Clinica{" +
+                "nomeClinica='" + nomeClinica + '\'' +
+                ", clientes=" + clientes +
+                '}';
     }
 }

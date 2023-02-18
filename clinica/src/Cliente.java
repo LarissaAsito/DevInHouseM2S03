@@ -1,4 +1,3 @@
-package model;
 
 public class Cliente {
     private Double peso;
@@ -49,4 +48,6 @@ public class Cliente {
     public void setCodigoCliente(String codigoCliente) {
         this.codigoCliente = codigoCliente;
     }
+
+
 }
